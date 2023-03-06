@@ -1,74 +1,41 @@
-import React from 'react';
-import {FaFacebook, FaGithub, FaInstagram, FaTwitter, FaTwitch} from 'react-icons/fa';
-
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full bg-[#02044A] text-gray-300 py-8 px-2'>
-        <div className='px-20 mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8'>
-            <div>
-                <h6 className='font-bold uppercase py-2'>Solutions</h6>
-                <ol>
-                    <li className='py-1'>Marketing</li>
-                    <li className='py-1'>Marketing</li>
-                    
-                </ol>
-            </div>
-            <div>
-                <h6 className='font-bold uppercase py-2'>Solutions</h6>
-                <ol>
-                    <li className='py-1'>Marketing</li>
-                    <li className='py-1'>Marketing</li>
-                  
-                </ol>
-            </div>
-            <div>
-                <h6 className='font-bold uppercase py-2'>Solutions</h6>
-                <ol>
-                    <li className='py-1'>Marketing</li>
-                    <li className='py-1'>Marketing</li>
-                 
-                </ol>
-            </div>
-            <div>
-                <h6 className='font-bold uppercase py-2'>Solutions</h6>
-                <ol>
-                    <li className='py-1'>Marketing</li>
-                    <li className='py-1'>Marketing</li>
-                  
-                </ol>
-            </div>
-
-            <div className='col-span-2 pt-2 md:pt-2'>
-                <p className='font-bold uppercase'>Subscribe To Our Newsletter</p>
-                <p className='py-4'>The latest news, articles, and resources
-                    sent to your inbox weekly.
-                </p>
-                <form className='flex flex-col sm:flex-row'>
-                    <input className='w-full p-2 mr-4 rounded-md  mb-2 ' type="email" placeholder="Enter email" />
-                    <button className='p-2 mb-2 bg-[#00B86E] '>Subscribe</button>
-
-                </form>
-
-            </div>
-
+    <footer className="bg-gray-800 text-white">
+        <div className="container mx-auto py-6 flex justify-between items-center">
+          <div className="flex">
+            <a href="#" className="mr-6">
+              <FaFacebook className="text-2xl" />
+            </a>
+            <a href="#" className="mr-6">
+              <FaTwitter className="text-2xl" />
+            </a>
+            <a href="#" className="mr-6">
+              <FaInstagram className="text-2xl" />
+            </a>
+          </div>
+          <div className="flex items-center">
+            <p className="mr-4">Subscribe to our newsletter:</p>
+            <form>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-4 py-2 rounded-l-full border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
+              />
+              <button
+                type="submit"
+                className="px-8 rounded-r-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 uppercase tracking-wide"
+              >
+                <FiMail className="inline-block mr-2" />
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
-
-        <div className='flex flex-col max-w-[1240px] px-2 py-4 m-auto justify-between sm:flex-row text-center text-gray-500 items-center'>
-            <p>2023 DNA101, LLC. All rights reserved.</p>
-            <div className='flex justify-between sm:w-[300px] pt-4 text-2xl gap-2'>
-                <FaFacebook />
-                <FaGithub />
-                <FaInstagram />
-                <FaTwitch />
-                <FaTwitter />
-
-            </div>
-
-        </div>
-        
-
-    </div>
+      </footer>
   )
 }
 

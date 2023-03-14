@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footer';
 import NavBar from './Navbar';
 
-const Blogcontent = () => {
+const Cousrecontent = () => {
   
 
   const news={
@@ -49,4 +49,4 @@ const Blogcontent = () => {
   )
 }
 
-export default Blogcontent;
+export default Cousrecontent;

@@ -1,42 +1,41 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
-import React from 'react'
+import React from 'react';
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="bg-gray-800 text-white">
-        <div className="container mx-auto py-6 flex justify-between items-center">
-          <div className="flex">
-            <a href="#" className="mr-6">
-              <FaFacebook className="text-2xl" />
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="container mx-auto flex flex-wrap justify-center">
+        <div className="w-full flex flex-wrap justify-center lg:justify-between items-center mb-4 lg:mb-0">
+          <div className="flex justify-center lg:justify-start space-x-6">
+            <a href="https://www.facebook.com/" className="text-gray-500 hover:text-white">
+              Facebook
             </a>
-            <a href="#" className="mr-6">
-              <FaTwitter className="text-2xl" />
+            <a href="https://www.Twitter.com/" className="text-gray-500 hover:text-white">
+              Twitter
             </a>
-            <a href="#" className="mr-6">
-              <FaInstagram className="text-2xl" />
+            <a href="https://www.Instagram.com/" target={'_blank'} className="text-gray-500 hover:text-white">
+              Instagram
             </a>
           </div>
-          <div className="flex items-center">
-            <p className="mr-4">Subscribe to our newsletter:</p>
-            <form>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 rounded-l-full border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
-              />
-              <button
-                type="submit"
-                className="px-8 rounded-r-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 uppercase tracking-wide"
-              >
-                <FiMail className="inline-block mr-2" />
-                Subscribe
-              </button>
-            </form>
-          </div>
+          <form className="flex justify-center lg:justify-end">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="bg-gray-800 rounded-l-full py-2 px-4 w-48 md:w-64 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+            />
+            <button
+              type="submit"
+              className="bg-purple-600 hover:bg-purple-700 rounded-r-full px-6 py-2"
+            >
+              Send
+            </button>
+          </form>
         </div>
-      </footer>
-  )
+        <div className="w-full text-center text-gray-500">
+          &copy; 2023 DNA101. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

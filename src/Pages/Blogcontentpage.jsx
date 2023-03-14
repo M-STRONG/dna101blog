@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar,Header,Blogcontent,Blogs,Footer, Sectionblog} from "../componets" 
+import {Navbar,Header,Blogcontent,Footer} from "../componets" 
 const Blogcontentpage = () => {
   return (
     <div>

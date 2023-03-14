@@ -1,15 +1,18 @@
+
 import React from 'react'
-import {Navbar,Header,Footer, Blogs} from "../componets" 
-import Blogcontentpage from './Blogcontentpage'
-const Homepage = () => {
+import {Navbar,Header,Footer, Section} from "../componets" 
+import VisitorCounter from '../componets/Service'
+
+const Homepage = ({blogs}) => {
+ 
   return (
     <div>
 
 <Navbar/>
    <Header/>
-   <Blogs/>
-   {/*<Blogcontent/>*/}
-   
+   <Section/>
+  <VisitorCounter/>
+  
    <Footer/>
  
     </div>

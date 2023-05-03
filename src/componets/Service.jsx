@@ -3,7 +3,7 @@ import { FaMicroscope } from "react-icons/fa";
 
 const Service = () => {
   return (
-    <div className="bg-blue-100 py-16 lg:py-24">
+    <div className="bg-blue-200 py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-center">
           Our Services

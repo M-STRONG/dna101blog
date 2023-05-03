@@ -1,7 +1,7 @@
 
 import React from 'react'
-import {Navbar,Header,Footer, Section} from "../componets" 
-import VisitorCounter from '../componets/Service'
+import {Navbar,Header,Slider,Footer, Section} from "../componets" 
+import Service from '../componets/Service'
 
 const Homepage = ({blogs}) => {
  
@@ -10,8 +10,9 @@ const Homepage = ({blogs}) => {
 
 <Navbar/>
    <Header/>
+   <Slider/>
    <Section/>
-  <VisitorCounter/>
+  <Service/>
   
    <Footer/>
  
